@@ -804,7 +804,7 @@
 				if(s) {
 					obj = obj.clone();
 					obj.children("INS").remove();
-					return obj.html();
+					return obj.text();
 				}
 				else {
 					obj = obj.contents().filter(function() { return this.nodeType == 3; })[0];
@@ -1972,7 +1972,7 @@
 				if(s) {
 					obj = obj.clone();
 					obj.children("INS").remove();
-					return obj.html();
+					return obj.text();
 				}
 				else {
 					obj = obj.contents().filter(function() { return this.nodeType == 3; })[0];
